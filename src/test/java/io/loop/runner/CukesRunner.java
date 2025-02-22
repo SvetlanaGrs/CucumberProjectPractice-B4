@@ -11,8 +11,11 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue ="io/loop/step_definitions",
         dryRun = false,
-        tags="@google_search",
-        monochrome=true
+        tags="@orderSmartBearTest",
+        // @wip (work in process) if not ready yet;
+        // "or" will run both matching, if you have test1-run it , if you have test2 run it
+        // tags = "@smoke and @regression" - will run which have both tagsи
+        monochrome=true // if true - show less warnings and less unnecessary data
 )
 
 public class CukesRunner {

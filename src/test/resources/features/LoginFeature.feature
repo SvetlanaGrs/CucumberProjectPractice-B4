@@ -5,7 +5,7 @@ Feature: Docuport Login Logout Feature
     Given user is on Docuport login page
 
 
-  @smoke
+  @client
   Scenario: Login as a client
     #Given user is on Docuport login page
     When user enters username for client
@@ -13,7 +13,7 @@ Feature: Docuport Login Logout Feature
     And user click login button
     Then user should be able to see the home for client
 
-  @smoke
+@employee
   Scenario: Login as an employee
 
     When user enters username for employee
@@ -21,7 +21,7 @@ Feature: Docuport Login Logout Feature
     And user click login button
     Then user should be able to see the home for employee
 
-  @smoke
+  @advisor
   Scenario: Login as an advisor
 
     When user enters username for advisor
@@ -29,7 +29,7 @@ Feature: Docuport Login Logout Feature
     And user click login button
     Then user should be able to see the home for advisor
 
-  @smoke
+  @supervisor
   Scenario: Login as an supervisor
 
     When user enters username for supervisor

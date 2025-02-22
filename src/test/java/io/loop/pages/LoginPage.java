@@ -18,4 +18,14 @@ public class LoginPage {
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginButton;
+
+    @FindBy(xpath = "//span[.=' Continue ']")
+    public WebElement continueButton;
+
+    @FindBy (xpath = "//div[@role='listbox']//a[1]")
+    public WebElement homeIcon;
+
+    @FindBy (xpath = " //a[@href='/1099-form']")
+    public WebElement form1099;
+
 }
